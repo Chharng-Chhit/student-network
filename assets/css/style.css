@@ -1,0 +1,121 @@
+body {
+  margin: auto;
+  width: 390px;
+}
+
+body .container {
+  width: 390px;
+  overflow: hidden;
+}
+
+body .container .navbar {
+  height: 70px;
+  background-color: #EBC6FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .navbar .logo {
+  margin-left: 13.64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .navbar .logo p {
+  color: #3E3838;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+}
+
+body .container .navbar .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .navbar .icon i,
+body .container .navbar .icon img {
+  margin-right: 18px;
+  font-weight: bold;
+  color: #3E3838;
+}
+
+body .container .nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 390px;
+  height: 60px;
+  background: #98B0A9;
+}
+
+body .container .nav-menu .home {
+  width: 78px;
+  height: 60px;
+  background: #00F4CB;
+  -webkit-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+}
+
+body .container .nav-menu > div {
+  width: 78px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .container .nav-menu > div a i {
+  font-size: 25px;
+  color: #333131;
+}
+
+body .container .nav-menu > div a img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+body .container .story {
+  height: 206px;
+  width: 390px;
+  background: #DFDFDF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+body .container .story div {
+  width: 128px;
+  height: 192px;
+  margin-left: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: #d4b3b3;
+}
+/*# sourceMappingURL=style.css.map */
