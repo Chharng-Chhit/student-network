@@ -101,9 +101,11 @@ body .container .nav-menu > div a img {
 }
 
 body .container .story {
+  margin-top: 5px;
   height: 206px;
   width: 390px;
   background: #DFDFDF;
+  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,8 +116,143 @@ body .container .story div {
   width: 128px;
   height: 192px;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 7px;
   border-radius: 10px;
   background: #d4b3b3;
+}
+
+body .container .createPost {
+  margin-top: 5px;
+  width: 390px;
+  height: 115px;
+  background: rgba(217, 217, 217, 0.84);
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body .container .createPost .icon-bar {
+  width: 315px;
+  height: 50px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .createPost .icon-bar p {
+  color: #3E3838;
+  font-family: 'Lobster', cursive;
+  font-weight: bold;
+}
+
+body .container .createPost .icon-bar .icon i {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+body .container .createPost .icon-bar .icon .video {
+  color: crimson;
+}
+
+body .container .createPost .icon-bar .icon .image {
+  color: #426156;
+}
+
+body .container .createPost .icon-bar .icon .camera {
+  color: #3E3838;
+}
+
+body .container .createPost .new-post {
+  width: 315px;
+  height: 50px;
+  margin: auto;
+  background: #F8F8F8;
+  border-radius: 10px;
+  padding: 0;
+}
+
+body .container .createPost .new-post .user {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 20px;
+}
+
+body .container .createPost .new-post .user img {
+  border-radius: 50%;
+  border: 2px solid #4ecec3;
+}
+
+body .container .createPost .new-post .user input {
+  border: none;
+  font-size: large;
+  font-family: 'Lobster', cursive;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 10px;
+  text-align: center;
+}
+
+body .container .contain .post {
+  margin-top: 5px;
+  width: 390px;
+  height: 350px;
+  background: rgba(217, 217, 217, 0.83);
+  border-radius: 10px;
+}
+
+body .container .contain .post .profile-user {
+  margin-bottom: 10px;
+  height: 55px;
+  background-color: #d4b3b3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .contain .post .profile-user img {
+  margin-top: 10px;
+  margin-left: 27px;
+  border-radius: 50%;
+  border: 2px solid #fdfdfd;
+}
+
+body .container .contain .post .profile-user .name-user {
+  margin-left: 15px;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .container .contain .post .profile-user .name-user .name {
+  font-weight: 700;
+  font-family: 'Lobster', cursive;
+  cursor: pointer;
+}
+
+body .container .contain .post .profile-user .name-user .times {
+  margin-top: 2px;
+  color: #3E3838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .contain .post .profile-user .name-user .times i {
+  margin-left: 5px;
 }
 /*# sourceMappingURL=style.css.map */
