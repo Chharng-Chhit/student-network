@@ -10,6 +10,7 @@ body {
             background-color: #EBC6FF;
             display: flex;
             justify-content: space-between;
+            // position: relative;
 
             .logo {
                 margin-left: 13.64px;
@@ -111,15 +112,109 @@ body {
             overflow-x: auto;
             object-fit: cover;
 
-
+           
             .story-post {
                 min-width: 100px;
                 height: 190px;
                 margin: 7px;
                 border-radius: 10px;
                 background: #d4b3b3;
-            }
 
+                
+
+                .bg-img {
+                    position: relative;
+                    height: 85%;
+                    width: 100px;
+                    object-fit: cover;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px 10px 0 0;
+                    }
+                    
+                    .user-img{
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        background-color: #0074B7;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        top: 110px;
+                        left: 25px;
+    
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            border: 2px solid  #0074B7;
+                        }
+                    }
+                }
+                
+                .story-txt{
+                    height: 15%;
+                    width: 100%;
+                    border-radius: 0 0 10px 10px;
+                    background-color: rgba(182, 176, 176, 0.84);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+            .me {
+                position: relative;
+                .bg-img {
+
+                    height: 70%;
+                    width: 100px;
+                    border-radius: 10px 10px 0 0;
+                    // object-fit: cover;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px 10px 0 0;
+                    }
+                    
+                }
+                .plus{
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-color: #0074B7;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    top: 100px;
+                    left: 25px;
+
+                    i{
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+                .story-txt{
+                    height: 30%;
+                    width: 100%;
+                    border-radius: 0 0 10px 10px;
+                    background-color: rgba(182, 176, 176, 0.84);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
         }
 
         .createPost {
