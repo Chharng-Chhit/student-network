@@ -1,10 +1,6 @@
-body {
-  margin: 0 auto;
-  width: 390px;
-}
-
 body .container {
   width: 390px;
+  margin: auto;
   position: relative;
   overflow: hidden;
 }
@@ -59,18 +55,20 @@ body .container .navbar .icon img {
   color: #3E3838;
 }
 
-body .container .nav-menu {
+body .container #nav-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 50px;
   height: 60px;
   background: #98B0A9;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  left: 0;
 }
 
-body .container .nav-menu .home {
+body .container #nav-menu .home {
   width: 78px;
   height: 60px;
   background: #00F4CB;
@@ -79,7 +77,7 @@ body .container .nav-menu .home {
   border-radius: 0px 10px 10px 0px;
 }
 
-body .container .nav-menu div {
+body .container #nav-menu div {
   width: 78px;
   height: 60px;
   display: -webkit-box;
@@ -93,12 +91,12 @@ body .container .nav-menu div {
           justify-content: center;
 }
 
-body .container .nav-menu div a i {
+body .container #nav-menu div a i {
   font-size: 25px;
   color: #333131;
 }
 
-body .container .nav-menu div a img {
+body .container #nav-menu div a img {
   border-radius: 50%;
   border: 2px solid white;
 }
@@ -196,14 +194,25 @@ body .container .createPost .new-post img {
 body .container .createPost .new-post input {
   border: 0;
   outline: none;
-  font-size: large;
+  font-size: 15px;
   font-family: 'Lobster', cursive;
   height: 35px;
-  width: 270px;
+  width: 200px;
   cursor: pointer;
   border-radius: 10px;
-  margin-right: 20px;
   padding: 5px;
+}
+
+body .container .createPost .new-post button {
+  border: 0;
+  height: 35px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: darkturquoise;
+  font-weight: 700;
+  margin-right: 20px;
+  -webkit-box-shadow: 0 4px 4px #98B0A9;
+          box-shadow: 0 4px 4px #98B0A9;
 }
 
 body .container .contain .post {
