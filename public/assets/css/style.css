@@ -71,6 +71,8 @@ body .container .nav-menu {
   display: flex;
   min-height: 60px;
   background: #98B0A9;
+  -webkit-box-shadow: 0 7px 7px #fafafa;
+          box-shadow: 0 7px 7px #fafafa;
 }
 
 body .container .nav-menu .home {
