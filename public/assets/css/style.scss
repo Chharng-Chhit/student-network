@@ -1,5 +1,7 @@
+
 body {
     .container {
+        position: relative;
         width: 390px;
         margin: auto;
         position: relative;
@@ -10,7 +12,7 @@ body {
             background-color: #EBC6FF;
             display: flex;
             justify-content: space-between;
-            // position: relative;
+            position: relative;
 
             .logo {
                 margin-left: 13.64px;
@@ -40,23 +42,19 @@ body {
 
             }
         }
-
-        // div.sticky {
-        //     position: -webkit-sticky;
-        //     position: sticky;
-        //     top: 0;
-        // }
-
-        #nav-menu {
-            display: flex;
-            height: 50px; // width: 390px;
-            height: 60px;
-            background: #98B0A9;
+        .sticky{
+            position: -webkit-sticky;
             position: sticky;
             top: 0;
-            left: 0;
-
-
+            position: fixed;
+            z-index: 1;
+        }
+        .nav-menu {
+            
+            display: flex;
+            min-height: 60px;
+            background: #98B0A9;
+            
             .home {
                 width: 78px;
                 height: 60px;
@@ -90,16 +88,7 @@ body {
             }
         }
 
-        // .sticky {
-        //     display: flex;
-        //     width: 390px;
-        //     height: 60px;
-        //     background: #98B0A9;
-        //     position: sticky;
-        //     top: 0;
-        //     left: 0;
-        // }
-
+        
 
 
         .story {
@@ -112,7 +101,7 @@ body {
             overflow-x: auto;
             object-fit: cover;
 
-           
+
             .story-post {
                 min-width: 100px;
                 height: 190px;
@@ -120,7 +109,7 @@ body {
                 border-radius: 10px;
                 background: #d4b3b3;
 
-                
+
 
                 .bg-img {
                     position: relative;
@@ -134,8 +123,8 @@ body {
                         object-fit: cover;
                         border-radius: 10px 10px 0 0;
                     }
-                    
-                    .user-img{
+
+                    .user-img {
                         position: absolute;
                         width: 50px;
                         height: 50px;
@@ -146,18 +135,18 @@ body {
                         border-radius: 50%;
                         top: 110px;
                         left: 25px;
-    
+
                         img {
                             width: 100%;
                             height: 100%;
                             object-fit: cover;
                             border-radius: 50%;
-                            border: 2px solid  #0074B7;
+                            border: 2px solid #0074B7;
                         }
                     }
                 }
-                
-                .story-txt{
+
+                .story-txt {
                     height: 15%;
                     width: 100%;
                     border-radius: 0 0 10px 10px;
@@ -166,13 +155,15 @@ body {
                     justify-content: center;
                     align-items: center;
 
-                    p{
+                    p {
                         font-size: 12px;
                     }
                 }
             }
+
             .me {
                 position: relative;
+
                 .bg-img {
 
                     height: 70%;
@@ -186,9 +177,10 @@ body {
                         object-fit: cover;
                         border-radius: 10px 10px 0 0;
                     }
-                    
+
                 }
-                .plus{
+
+                .plus {
                     position: absolute;
                     width: 50px;
                     height: 50px;
@@ -200,12 +192,13 @@ body {
                     top: 100px;
                     left: 25px;
 
-                    i{
+                    i {
                         font-size: 30px;
                         color: white;
                     }
                 }
-                .story-txt{
+
+                .story-txt {
                     height: 30%;
                     width: 100%;
                     border-radius: 0 0 10px 10px;
@@ -373,8 +366,9 @@ body {
                             margin-top: 5px;
                             width: 90%;
                             color: #3E3838;
-                            
+
                         }
+
                         .img-post {
                             width: 90%;
                             height: 260px;
@@ -418,7 +412,8 @@ body {
 
                         }
                     }
-                    .reaction{
+
+                    .reaction {
                         margin: auto;
                         height: 50px;
                         // background-color: #98B0A9;
@@ -427,20 +422,23 @@ body {
                         align-items: center;
                         justify-content: space-between;
 
-                        >div{
+                        >div {
                             display: block;
 
-                            i{
+                            i {
                                 font-size: 25px;
                                 margin-top: 5px;
                                 font-weight: 10px;
                             }
                         }
 
-                        .like-comment{
+                        .like-comment {
                             display: flex;
                         }
-                        .like, .comment, .share{
+
+                        .like,
+                        .comment,
+                        .share {
                             font-size: medium;
                             width: 100px;
                             display: flex;
