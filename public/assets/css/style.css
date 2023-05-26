@@ -211,6 +211,7 @@ body .container .createPost .new-post button {
   background-color: darkturquoise;
   font-weight: 700;
   margin-right: 20px;
+  cursor: pointer;
   -webkit-box-shadow: 0 4px 4px #98B0A9;
           box-shadow: 0 4px 4px #98B0A9;
 }
@@ -220,7 +221,7 @@ body .container .contain .post {
   width: 390px;
   background: rgba(217, 217, 217, 0.83);
   border-radius: 10px;
-  padding-bottom: 10000px;
+  padding-bottom: 10px;
 }
 
 body .container .contain .post .profile-user {
@@ -269,9 +270,16 @@ body .container .contain .post .post-contain p {
   margin-bottom: 5px;
 }
 
-body .container .contain .post .post-contain .img-post {
-  height: 260px;
+body .container .contain .post .post-contain .post-block hr {
+  margin: auto;
+  margin-top: 5px;
   width: 90%;
+  color: #3E3838;
+}
+
+body .container .contain .post .post-contain .post-block .img-post {
+  width: 90%;
+  height: 260px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -281,7 +289,7 @@ body .container .contain .post .post-contain .img-post {
           justify-content: space-between;
 }
 
-body .container .contain .post .post-contain .img-post .img-post1 {
+body .container .contain .post .post-contain .post-block .img-post .img-post1 {
   width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,7 +305,7 @@ body .container .contain .post .post-contain .img-post .img-post1 {
      object-fit: cover;
 }
 
-body .container .contain .post .post-contain .img-post .img-post1 img {
+body .container .contain .post .post-contain .post-block .img-post .img-post1 img {
   width: 170px;
   height: 260px;
   -o-object-fit: cover;
@@ -305,18 +313,63 @@ body .container .contain .post .post-contain .img-post .img-post1 img {
   border-radius: 10px;
 }
 
-body .container .contain .post .post-contain .img-post .img-post1 .img-post2 {
+body .container .contain .post .post-contain .post-block .img-post .img-post1 .img-post2 {
   width: 170px;
   height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body .container .contain .post .post-contain .img-post .img-post1 .img-post2 img {
+body .container .contain .post .post-contain .post-block .img-post .img-post1 .img-post2 img {
   width: 170px;
   height: 125px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
+}
+
+body .container .contain .post .post-contain .reaction {
+  margin: auto;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .container .contain .post .post-contain .reaction > div {
+  display: block;
+}
+
+body .container .contain .post .post-contain .reaction > div i {
+  font-size: 25px;
+  margin-top: 5px;
+  font-weight: 10px;
+}
+
+body .container .contain .post .post-contain .reaction .like-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .contain .post .post-contain .reaction .like, body .container .contain .post .post-contain .reaction .comment, body .container .contain .post .post-contain .reaction .share {
+  font-size: medium;
+  width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@ body {
 
         #nav-menu {
             display: flex;
-            height: 50px;// width: 390px;
+            height: 50px; // width: 390px;
             height: 60px;
             background: #98B0A9;
             position: sticky;
@@ -184,35 +184,37 @@ body {
                 //     box-sizing: border-box;
                 //     margin-left: 20px;
 
-                    img {
-                        object-fit: cover;
-                        border-radius: 50%;
-                        border: 2px solid #4ecec3;
-                        margin-left: 27px;
-                    }
+                img {
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid #4ecec3;
+                    margin-left: 27px;
+                }
 
-                    input {
-                        border: 0;
-                        outline: none;
-                        font-size: 15px;
-                        font-family: 'Lobster', cursive;
-                        height: 35px;
-                        width: 200px;
-                        cursor: pointer;
-                        border-radius: 10px;
-                        padding: 5px;
-                    }
+                input {
+                    border: 0;
+                    outline: none;
+                    font-size: 15px;
+                    font-family: 'Lobster', cursive;
+                    height: 35px;
+                    width: 200px;
+                    cursor: pointer;
+                    border-radius: 10px;
+                    padding: 5px;
+                }
 
-                    button {
-                        border: 0;
-                        height: 35px;
-                        width: 45px;
-                        border-radius: 10px;
-                        background-color: darkturquoise;
-                        font-weight: 700;
-                        margin-right: 20px;
-                        box-shadow: 0 4px 4px #98B0A9;
-                    }
+                button {
+                    border: 0;
+                    height: 35px;
+                    width: 45px;
+                    border-radius: 10px;
+                    background-color: darkturquoise;
+                    font-weight: 700;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    box-shadow: 0 4px 4px #98B0A9;
+                }
+
                 // }
             }
         }
@@ -224,8 +226,8 @@ body {
                 // height: 370px;
                 background: rgba(217, 217, 217, 0.83);
                 border-radius: 10px;
-                // padding-bottom: 10px;
-                padding-bottom: 10000px;
+                padding-bottom: 10px;
+                // padding-bottom: 10000px;
 
                 .profile-user {
                     margin-bottom: 5px;
@@ -270,47 +272,86 @@ body {
                         margin-bottom: 5px;
                     }
 
-                    .img-post {
-                        height: 260px;
-                        width: 90%;
-                        margin: auto;
-                        display: flex;
-                        justify-content: space-between;
-                        // background-color: #3E3838;
-
-                        .img-post1 {
-                            width: 170px;
+                    .post-block {
+                        hr {
+                            margin: auto;
+                            margin-top: 5px;
+                            width: 90%;
+                            color: #3E3838;
+                            
+                        }
+                        .img-post {
+                            width: 90%;
+                            height: 260px;
+                            margin: auto;
                             display: flex;
-                            flex-direction: column;
                             justify-content: space-between;
-                            object-fit: cover;
+                            // background-color: #3E3838;
 
-                            img {
+                            .img-post1 {
                                 width: 170px;
-                                height: 260px;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: space-between;
                                 object-fit: cover;
-                                border-radius: 10px;
-                            }
-
-
-                            .img-post2 {
-
-                                width: 170px;
-                                height: 125px;
-                                // background-color: #d4b3b3;
-                                object-fit: cover;
-
 
                                 img {
                                     width: 170px;
-                                    height: 125px;
+                                    height: 260px;
                                     object-fit: cover;
                                     border-radius: 10px;
                                 }
 
+
+                                .img-post2 {
+
+                                    width: 170px;
+                                    height: 125px;
+                                    // background-color: #d4b3b3;
+                                    object-fit: cover;
+
+
+                                    img {
+                                        width: 170px;
+                                        height: 125px;
+                                        object-fit: cover;
+                                        border-radius: 10px;
+                                    }
+
+                                }
+                            }
+
+                        }
+                    }
+                    .reaction{
+                        margin: auto;
+                        height: 50px;
+                        // background-color: #98B0A9;
+                        // width: 90%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        >div{
+                            display: block;
+
+                            i{
+                                font-size: 25px;
+                                margin-top: 5px;
+                                font-weight: 10px;
                             }
                         }
 
+                        .like-comment{
+                            display: flex;
+                        }
+                        .like, .comment, .share{
+                            font-size: medium;
+                            width: 100px;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
                     }
                 }
 
