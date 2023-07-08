@@ -416,8 +416,7 @@ body {
                     .reaction {
                         margin: auto;
                         height: 50px;
-                        // background-color: #98B0A9;
-                        // width: 90%;
+                        
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
@@ -439,11 +438,15 @@ body {
                         .like,
                         .comment,
                         .share {
-                            font-size: medium;
+                            
                             width: 100px;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
+
+                            >div{
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -452,4 +455,7 @@ body {
         }
     }
 
+}
+footer {
+    margin-top: 50px;
 }
